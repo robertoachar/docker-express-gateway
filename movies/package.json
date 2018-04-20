@@ -1,0 +1,33 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "A playground for Express Gateway and Docker.",
+  "author": "Roberto Achar <robertoachar@gmail.com>",
+  "homepage": "https://github.com/robertoachar/movies#readme",
+  "keywords": [
+    "node"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertoachar/movies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoachar/movies/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "prettier": "1.12.1"
+  },
+  "license": "MIT"
+}
