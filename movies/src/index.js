@@ -19,8 +19,6 @@ mongoose.connection.on('error', (err) => {
   winston.error(err.message);
 });
 
-require('./movie/movie.model');
-
 app.listen(config.PORT, () => {
   Object.keys(config).forEach((key) => winston.info(`${key}: ${config[key]}`));
 });
