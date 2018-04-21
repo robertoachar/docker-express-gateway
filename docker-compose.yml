@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  gateway:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./gateway:/usr/src/app
+    networks:
+      - app-network
+    links:
+      - heroes
+      - movies
+
+  heroes:
+    build:
+      context: ./heroes
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./heroes:/usr/src/app
+    networks:
+      - app-network
+    links:
+      - mongodb
+
+  movies:
+    build:
+      context: ./movies
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./movies:/usr/src/app
+    networks:
+      - app-network
+    links:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
