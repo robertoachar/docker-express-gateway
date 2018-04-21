@@ -1,6 +1,12 @@
 {
-  "extends": ["plugin:prettier/recommended"],
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "env": {
     "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "no-process-env": "error"
   }
 }
