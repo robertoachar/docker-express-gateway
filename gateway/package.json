@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A playground for Express Gateway and Docker.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
-  "homepage": "https://github.com/robertoachar/gateway#readme",
+  "homepage": "https://github.com/robertoachar/docker-express-gateway#readme",
   "keywords": ["node"],
   "main": "src/index.js",
   "files": ["src"],
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robertoachar/gateway.git"
+    "url": "https://github.com/robertoachar/docker-express-gateway.git"
   },
   "bugs": {
-    "url": "https://github.com/robertoachar/gateway/issues"
+    "url": "https://github.com/robertoachar/docker-express-gateway/issues"
   },
   "dependencies": {
     "axios": "0.18.0",

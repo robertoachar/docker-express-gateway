@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A playground for Express Gateway and Docker.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
-  "homepage": "https://github.com/robertoachar/movies#readme",
+  "homepage": "https://github.com/robertoachar/docker-express-gateway#readme",
   "keywords": ["node"],
   "main": "src/index.js",
   "files": ["src"],
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robertoachar/movies.git"
+    "url": "https://github.com/robertoachar/docker-express-gateway.git"
   },
   "bugs": {
-    "url": "https://github.com/robertoachar/movies/issues"
+    "url": "https://github.com/robertoachar/docker-express-gateway/issues"
   },
   "dependencies": {
     "body-parser": "1.18.2",
