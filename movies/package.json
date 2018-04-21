@@ -4,16 +4,12 @@
   "description": "A playground for Express Gateway and Docker.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "homepage": "https://github.com/robertoachar/movies#readme",
-  "keywords": [
-    "node"
-  ],
+  "keywords": ["node"],
   "main": "src/index.js",
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,11 +18,21 @@
   "bugs": {
     "url": "https://github.com/robertoachar/movies/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "dotenv": "5.0.1",
+    "express": "4.16.3",
+    "express-catch-errors": "0.1.0",
+    "mongoose": "5.0.15",
+    "winston": "2.4.2"
+  },
   "devDependencies": {
     "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
     "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.11.0",
     "eslint-plugin-prettier": "2.6.0",
+    "nodemon": "1.17.3",
     "prettier": "1.12.1"
   },
   "license": "MIT"
